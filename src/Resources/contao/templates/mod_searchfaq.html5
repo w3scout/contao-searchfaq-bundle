@@ -1,0 +1,20 @@
+
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<div class="formbody">
+    <div class="widget widget-text">
+        <label for="faq_search"><?= $this->label ?></label>
+        <input type="search" id="faq_search" class="text input" placeholder="<?= $this->placeholder ?>">
+    </div>
+    <div class="widget widget-submit">
+        <button type="submit" class="search submit"><?= $this->slabel ?></button>
+    </div>
+    <div class="widget widget-reset">
+        <button type="reset" class="reset"><?= $this->sreset ?></button>
+    </div>
+</div>
+<div class="alert" role="alert"></div>
+
+<?php $this->endblock(); ?>

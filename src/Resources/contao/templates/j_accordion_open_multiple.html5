@@ -1,0 +1,44 @@
+
+<script src="<?= TL_ASSETS_URL ?>assets/jquery-ui/js/jquery-ui.min.js"></script>
+<script>
+  jQuery(function($) {
+    $(document).accordion({
+      // Put custom options here
+      heightStyle: 'content',
+      header: '.toggler',
+      collapsible: true,
+      active: false,
+      create: function(event, ui) {
+        ui.header.addClass('active');
+        $('.ui-icon').append('<span class="inner"></span>');
+        $('.toggler').attr('tabindex', 0);
+      },
+      activate: function (event, ui) {
+        var scrollTop = $(document).scrollTop();
+        var top = $(ui.newHeader).offset().top;
+        $(document).scrollTop(scrollTop + top - 200);
+      },
+      beforeActivate: function (event, ui) {
+        if (ui.newHeader[0]) {
+            var currHeader = ui.newHeader;
+            var currContent = currHeader.next('.ui-accordion-content');
+        } else {
+            var currHeader = ui.oldHeader;
+            var currContent = currHeader.next('.ui-accordion-content');
+        }
+        var isPanelSelected = currHeader.attr('aria-selected') == 'true';
+
+        currHeader.toggleClass('ui-corner-all', isPanelSelected).toggleClass('accordion-header-active active ui-state-active ui-corner-top', !isPanelSelected).attr('aria-selected', ((!isPanelSelected).toString()));
+        currHeader.children('.ui-icon').toggleClass('ui-icon-triangle-1-e', isPanelSelected).toggleClass('ui-icon-triangle-1-s', !isPanelSelected);
+        currContent.toggleClass('accordion-content-active', !isPanelSelected)
+        if (isPanelSelected) {
+            currContent.slideUp();
+        } else {
+            currContent.slideDown();
+        }
+
+        return false; // Cancel the default action
+      }
+    });
+  });
+</script>
