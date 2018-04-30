@@ -1,8 +1,8 @@
 {
   "name": "w3scout/contao-searchfaq-bundle",
   "homepage": "https://github.com/w3scout/contao-searchfaq-bundle",
-  "description":"Search for FAQ-Sites.",
-  "keywords":["contao", "search", "faq"],
+  "description":"Search FAQ-Sites.",
+  "keywords":["contao", "contao4", "contao-bundle", "search", "faq", "faq-accordion"],
   "type": "contao-bundle",
   "license": "LGPL-3.0+",
   "authors": [
