@@ -38,6 +38,7 @@ jQuery(function($) {
   function reset() {
     $('.alert').removeClass('alert-danger alert-success').css('display', 'none').text('');
 
+    searchTerm = $('#faq_search').val();
     if(searchTerm == undefined || searchTerm.length == 0) return;
     $('#faq_search').val('');
 
