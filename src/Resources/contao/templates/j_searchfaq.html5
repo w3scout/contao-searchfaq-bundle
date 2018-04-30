@@ -32,7 +32,9 @@ jQuery(function($) {
       $('.alert').addClass('alert-danger').html('No matches.').css('display', 'block');
     }
   });
-  $('.reset').on('click', reset());
+  $('.reset').on('click', function() {
+    reset();
+  });
   function reset() {
     $('.alert').removeClass('alert-danger alert-success').css('display', 'none').text('');
 
