@@ -10,7 +10,7 @@
 ## About
 Search FAQ-sites.
 
-This bundle adds a search-module for FAQ-sites and turns the FAQ-items into an accordion which can have multiple items open simultaneously, if they contain matches. 
+This bundle adds a search-module for FAQ-sites and turns the FAQ-items into an accordion which shows matches can have multiple items open simultaneously if they contain matches.
 
 ## Installation
 Install [composer](https://getcomposer.org) if you haven't already, then enter this command in the main directory of your Contao installation:
@@ -25,6 +25,10 @@ composer require w3scout/contao-searchfaq-bundle
 5. Add the jQuery library to your theme and activate the following templates: 
    * j_accordion_open_multiple
    * j_searchfaq
+
+## Additional Options
+1. Turn the items of a FAQ-Site into an accordion, without the need to use the FAQ-Search: open the FAQ-Site configuration and choose "mod_faqpage_accordion" as individual module template.
+2. Choose between standard accordion behavior (one open item at a time) or select the "j_accordion_open_multiple" template, if you need more than one open accordion at the same time. This is not limited to FAQs, it works with standalone accordion elements too.
 
 ## Contribution
 Bug reports and pull requests are welcome
