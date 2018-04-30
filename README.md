@@ -4,7 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/downloads)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
 [![Latest Unstable Version](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/v/unstable)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
 [![License](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/license)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/7d75bbcf-5955-4316-9fd5-f06bd384ac51/mini.png)](https://insight.sensiolabs.com/projects/7d75bbcf-5955-4316-9fd5-f06bd384ac51)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b89debe9-131d-4c0a-b21e-b8ae0c53708d/mini.png)](https://insight.sensiolabs.com/projects/b89debe9-131d-4c0a-b21e-b8ae0c53708d)
 
 ## About
 Search FAQ-sites.
