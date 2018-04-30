@@ -10,7 +10,7 @@
 ## About
 Search FAQ-sites.
 
-This bundle adds a search-module for FAQ-sites and turns the FAQ-items into an accordion which shows matches can have multiple items open simultaneously if they contain matches.
+This bundle adds a search-module for FAQ-sites and turns the FAQ-items into an accordion, which can have multiple items open simultaneously if more than one faq-item contains matches.
 
 ## Installation
 Install [composer](https://getcomposer.org) if you haven't already, then enter this command in the main directory of your Contao installation:
