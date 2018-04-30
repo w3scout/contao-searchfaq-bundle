@@ -15,3 +15,4 @@ $GLOBALS['TL_LANG']['MSC']['searchfaq_label']  		= 'Search FAQ';
 $GLOBALS['TL_LANG']['MSC']['searchfaq_slabel']  	= 'Search';
 $GLOBALS['TL_LANG']['MSC']['searchfaq_sreset']  	= 'Clear Filter';
 $GLOBALS['TL_LANG']['MSC']['searchfaq_placeholder'] = 'Type in searchterm ';
+

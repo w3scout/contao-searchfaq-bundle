@@ -4,6 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/downloads)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
 [![Latest Unstable Version](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/v/unstable)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
 [![License](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/license)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
+[![Dependency Status](https://www.versioneye.com/user/projects/5ae68b0c0fb24f54332bfabd/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5ae68b0c0fb24f54332bfabd)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/b89debe9-131d-4c0a-b21e-b8ae0c53708d/mini.png)](https://insight.sensiolabs.com/projects/b89debe9-131d-4c0a-b21e-b8ae0c53708d)
 
 ## About

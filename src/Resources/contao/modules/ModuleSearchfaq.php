@@ -56,3 +56,4 @@ class ModuleSearchfaq extends \Module
         $this->Template->placeholder  	= $GLOBALS['TL_LANG']['MSC']['searchfaq_placeholder'];
     }
 }
+
