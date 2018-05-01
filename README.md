@@ -5,7 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/v/unstable)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
 [![License](https://poser.pugx.org/w3scout/contao-searchfaq-bundle/license)](https://packagist.org/packages/w3scout/contao-searchfaq-bundle)
 [![Dependency Status](https://www.versioneye.com/user/projects/5ae68b0c0fb24f54332bfabd/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5ae68b0c0fb24f54332bfabd)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b89debe9-131d-4c0a-b21e-b8ae0c53708d/mini.png)](https://insight.sensiolabs.com/projects/b89debe9-131d-4c0a-b21e-b8ae0c53708d)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1fb87c1ef5304271a989975fff8887dd)](https://www.codacy.com/app/w3scout/contao-searchfaq-bundle?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=w3scout/contao-searchfaq-bundle&amp;utm_campaign=Badge_Grade)
 
 ## About
 Search FAQ-sites.
