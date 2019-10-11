@@ -8,6 +8,7 @@ jQuery(function($) {
   });
 
   $('.search').on('click', function () {
+    results=0;
     searchTerm = $('#faq_search').val();
     if(searchTerm.length == 0) return;
 
