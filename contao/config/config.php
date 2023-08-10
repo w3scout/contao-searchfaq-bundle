@@ -10,5 +10,3 @@
  * @filesource
  * @see	       https://github.com/w3scout/contao-searchfaq-bundle
  */
-
-#$GLOBALS['FE_MOD']['faq']['searchfaq'] = ModuleSearchfaq::class;

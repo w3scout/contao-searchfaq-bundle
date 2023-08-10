@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Contao Open Source CMS, Copyright (C) 2005-2018 Leo Feyer
  *
@@ -12,12 +14,9 @@
  */
 
 
-
 use W3Scout\ContaoSearchFaq\Controller\FrontendModule\SearchfaqController;
 
-dump('Test');
-exit;
 /**
  * Frontend module
  */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['searchfaq']  = '{title_legend},name,headline,type;{config_legend};{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes'][SearchfaqController::TYPE]  = '{title_legend},name,headline,type;{config_legend};{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';

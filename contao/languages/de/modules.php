@@ -18,5 +18,4 @@ use W3Scout\ContaoSearchFaq\Controller\FrontendModule\SearchfaqController;
  * Frontend modules
  */
 $GLOBALS['TL_LANG']['FMD']['searchfaq'] = 'FAQ Suche';
-$GLOBALS['TL_LANG']['FMD']['searchfaq'] = ['FAQ-Suche', 'Stellt ein Suchformular für FAQ-Seiten bereit.'];
-#$GLOBALS['TL_LANG']['FMD'][SearchfaqController::TYPE] = ['FAQ-Suche', 'Stellt ein Suchformular für FAQ-Seiten bereit.'];
+$GLOBALS['TL_LANG']['FMD'][SearchfaqController::TYPE] = ['FAQ-Suche', 'Stellt ein Suchformular für FAQ-Seiten bereit.'];
