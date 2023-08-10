@@ -70,6 +70,7 @@ class SearchfaqController extends AbstractFrontendModuleController
     }
     protected function getResponse(Template $template, ModuleModel $model, Request $request): Response
     {
+        $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/w3scoutcontaosearchfaq/search.min.js|static';
 
         $template->label  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_label'];
         $template->slabel  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_slabel'];

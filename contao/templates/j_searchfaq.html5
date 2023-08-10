@@ -13,7 +13,7 @@ jQuery(function($) {
     if(searchTerm.length == 0) return;
 
     $('.accordion').each(function () {
-      if($(this).text().toUpperCase().indexOf(searchTerm.toUpperCase()) >= 0) {
+      if($(this).text().toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0) {
         $(this).html(
           $(this).html().replace(
             new RegExp(searchTerm, "ig"),
@@ -44,7 +44,7 @@ jQuery(function($) {
     $('#faq_search').val('');
 
     $('.accordion').each(function () {
-      if($(this).text().toUpperCase().indexOf(searchTerm.toUpperCase()) >= 0) {
+      if($(this).text().toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0) {
         $(this).html(
           $(this).html().replace(/<mark>/g, "").replace(/<\/mark>/g, "")
         ).hide().parent().children('.toggler').removeClass('accordion-header-active active ui-state-active').attr('aria-selected', 'false');

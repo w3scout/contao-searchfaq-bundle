@@ -1,20 +1,20 @@
 
-<?php $this->extend('block_unsearchable'); ?>
+<?php $this->extend('block_searchable'); ?>
 
 <?php $this->block('content'); ?>
 
 <div class="formbody">
     <div class="widget widget-text">
-        <label for="faq_search"><?= $this->label ?></label>
-        <input type="search" id="faq_search" class="text input" placeholder="<?= $this->placeholder ?>">
+        <label for="ctrl_faq_keywords"><?= $this->label ?></label>
+        <input type="search" id="ctrl_faq_keywords" class="text input" placeholder="<?= $this->placeholder ?>">
     </div>
     <div class="widget widget-submit">
-        <button type="submit" class="search submit"><?= $this->slabel ?></button>
+        <button type="submit" id="ctrl_submit_faqsearch" class="submit"><?= $this->slabel ?></button>
     </div>
     <div class="widget widget-reset">
-        <button type="reset" class="reset"><?= $this->sreset ?></button>
+        <button type="reset" id="ctrl_reset_faqsearch" class="reset"><?= $this->sreset ?></button>
     </div>
 </div>
-<div class="alert" role="alert"></div>
+<div id="result_hint" role="alert"></div>
 
 <?php $this->endblock(); ?>
