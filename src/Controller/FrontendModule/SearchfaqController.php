@@ -71,10 +71,10 @@ class SearchfaqController extends AbstractFrontendModuleController
     protected function getResponse(Template $template, ModuleModel $model, Request $request): Response
     {
 
-        $this->Template->label  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_label'];
-        $this->Template->slabel  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_slabel'];
-        $this->Template->sreset  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_sreset'];
-        $this->Template->placeholder  	= $GLOBALS['TL_LANG']['MSC']['searchfaq_placeholder'];
+        $template->label  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_label'];
+        $template->slabel  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_slabel'];
+        $template->sreset  		= $GLOBALS['TL_LANG']['MSC']['searchfaq_sreset'];
+        $template->placeholder  	= $GLOBALS['TL_LANG']['MSC']['searchfaq_placeholder'];
 
         return $template->getResponse();
     }
