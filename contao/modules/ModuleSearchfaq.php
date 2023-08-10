@@ -8,12 +8,16 @@
  * @package    SearchFAQ
  * @license    LGPL-3.0+
  * @filesource
- * @see	       https://github.com/w3scout/contao-searchfaq-bundle
+ * @link https://github.com/w3scout/contao-searchfaq-bundle
+ *
  */
 
 namespace W3Scout\Searchfaq;
 
-class ModuleSearchfaq extends \Module
+use Contao\StringUtil;
+use Contao\System;
+
+class ModuleSearchfaq extends Module
 {
 
     /**
@@ -28,16 +32,17 @@ class ModuleSearchfaq extends \Module
      */
     public function generate()
     {
-        if (TL_MODE == 'BE')
+        $request = System::getContainer()->get('request_stack')->getCurrentRequest();
+
+        if ($request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request))
         {
-            /** @var \BackendTemplate|object $objTemplate */
-            $objTemplate = new \BackendTemplate('be_wildcard');
+            $objTemplate = new BackendTemplate('be_wildcard');
 
             $objTemplate->wildcard = '### ' . utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['searchfaq'][0]) . ' ###';
             $objTemplate->title = $this->headline;
             $objTemplate->id = $this->id;
             $objTemplate->link = $this->name;
-            $objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
+            $objTemplate->href = StringUtil::specialcharsUrl(System::getContainer()->get('router')->generate('contao_backend', array('do'=>'themes', 'table'=>'tl_module', 'act'=>'edit', 'id'=>$this->id)));
 
             return $objTemplate->parse();
         }
@@ -56,4 +61,3 @@ class ModuleSearchfaq extends \Module
         $this->Template->placeholder  	= $GLOBALS['TL_LANG']['MSC']['searchfaq_placeholder'];
     }
 }
-

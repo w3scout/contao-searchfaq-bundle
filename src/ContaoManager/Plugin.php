@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * @copyright  Darko Selesi 2018 <http://w3scouts.com>
  * @author     Darko Selesi (w3scout)
@@ -7,26 +10,18 @@
  * @see	       https://github.com/w3scout/contao-searchfaq-bundle
  */
 
-namespace W3Scout\SearchfaqBundle\ContaoManager;
+namespace W3Scout\ContaoSearchFaq\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 
-/**
- * Plugin for the Contao Manager.
- *
- * @author Darko Selesi (w3scout)
- */
 class Plugin implements BundlePluginInterface
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create('W3Scout\SearchfaqBundle\W3ScoutSearchfaqBundle')
+            BundleConfig::create('W3Scout\ContaoSearchFaq\W3ScoutContaoSearchFaq')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
                 ->setReplace(['searchfaq']),
         ];

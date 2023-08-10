@@ -29,19 +29,17 @@
     },
     "autoload": {
         "psr-4": {
-            "W3Scout\\SearchfaqBundle\\": "src/"
-        },
-        "classmap": [
-            "src/Resources/contao/"
-        ],
-        "exclude-from-classmap": [
-            "src/Resources/contao/config/",
-            "src/Resources/contao/dca/",
-            "src/Resources/contao/languages/",
-            "src/Resources/contao/templates/"
-        ]
+            "W3Scout\\ContaoSearchFaq\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": false,
+            "contao/manager-plugin": false,
+            "contao-community-alliance/composer-plugin": true
+        }
     },
     "extra": {
-        "contao-manager-plugin": "W3Scout\\SearchfaqBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "W3Scout\\ContaoSearchFaq\\ContaoManager\\Plugin"
     }
 }

@@ -11,8 +11,13 @@
  * @see	       https://github.com/w3scout/contao-searchfaq-bundle
  */
 
+
+
+use W3Scout\ContaoSearchFaq\Controller\FrontendModule\SearchfaqController;
+
+dump('Test');
+exit;
 /**
- * Add palettes to tl_module
+ * Frontend module
  */
 $GLOBALS['TL_DCA']['tl_module']['palettes']['searchfaq']  = '{title_legend},name,headline,type;{config_legend};{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
-

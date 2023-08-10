@@ -11,4 +11,4 @@
  * @see	       https://github.com/w3scout/contao-searchfaq-bundle
  */
 
-$GLOBALS['FE_MOD']['faq']['searchfaq'] = 'W3Scout\Searchfaq\ModuleSearchfaq';
+#$GLOBALS['FE_MOD']['faq']['searchfaq'] = ModuleSearchfaq::class;
